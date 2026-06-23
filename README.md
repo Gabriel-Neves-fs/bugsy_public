@@ -173,5 +173,5 @@ Ele foi construído como um MVP real, não como uma página estática de portfol
 Desenvolvido por **Gabriel Neves**.
 
 - GitHub: [Gabriel-Neves-fs](https://github.com/Gabriel-Neves-fs)
-- LinkedIn: [Gabriel Neves](https://www.linkedin.com/in/gabriel-neves-fs/)
-- Email: [gabriel.neves.dev@gmail.com](mailto:gabriel.neves.dev@gmail.com)
+- LinkedIn: [Gabriel Neves](https://www.linkedin.com/in/gabriel-neves-4194a4389/)
+- Email: [gabriel.neves.dev@gmail.com](mailto:gabrielnevesdevv01@gmail.com)
