@@ -127,7 +127,7 @@ Enquanto a extensão não estiver publicada na Chrome Web Store, ela pode ser in
 1. Acesse o app web:
 
 ```txt
-adicione-a-url-do-app-aqui
+https://bugsy-web.vercel.app/
 ```
 
 2. Entre com sua conta Google.
@@ -135,7 +135,7 @@ adicione-a-url-do-app-aqui
 3. Baixe o pacote da extensão:
 
 ```txt
-adicione-o-link-do-drive-ou-release-aqui
+https://drive.google.com/file/d/1L4L00ZCQ5T7yriPEDrEIV5VrnzgyNbbw/view?usp=sharing
 ```
 
 4. Extraia o arquivo `.zip`.
