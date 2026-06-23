@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+!apps/extension/.env.development
+!apps/extension/.env.production.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Chrome extension artifacts
+*.crx
+*.pem
+
+# Internal project notes
+docs/
+
+# Prisma
+apps/api/prisma/dev.db
+apps/api/prisma/dev.db-journal
+apps/api/src/generated/prisma/

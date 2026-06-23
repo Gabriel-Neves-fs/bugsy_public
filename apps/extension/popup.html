@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bugsy</title>
+    <script type="module" src="/src/popup.ts"></script>
+  </head>
+  <body>
+    <main class="popup-shell" aria-labelledby="bugsy-title">
+      <section class="hero">
+        <img class="brand-mark" src="/bugsy-logo-dark.svg" alt="" aria-hidden="true" />
+        <div class="brand-copy">
+          <h1 id="bugsy-title">Bugsy</h1>
+          <p>Screen recorder</p>
+        </div>
+        <button
+          id="open-dashboard-button"
+          class="dashboard-button"
+          type="button"
+          aria-label="Abrir dashboard"
+          title="Abrir dashboard"
+        >
+          <img src="/house.svg" alt="" aria-hidden="true" />
+        </button>
+      </section>
+
+      <button id="record-tab-button" class="record-button" type="button">
+        <span class="record-dot" aria-hidden="true"></span>
+        <span id="record-button-label">Start Recording</span>
+      </button>
+
+      <label class="audio-option" for="record-audio-checkbox">
+        <span>
+          <strong>Gravar áudio da aba</strong>
+          <small>Captura o som reproduzido nesta aba</small>
+        </span>
+        <input id="record-audio-checkbox" type="checkbox" />
+      </label>
+
+      <div id="countdown-panel" class="countdown-panel" hidden>
+        <span class="countdown-kicker">A gravação começa em</span>
+        <strong id="countdown-value">5</strong>
+      </div>
+
+      <p id="status-message" class="status-message" role="status" aria-live="polite">
+        Esta aba está pronta para ser gravada.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "@bugsy/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "prisma generate && tsx watch src/server.ts",
+    "build": "prisma generate && tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "prisma generate && tsc --noEmit",
+    "test": "prisma generate && vitest run",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "prisma:studio": "prisma studio",
+    "legacy:assign-recordings": "tsx src/scripts/assign-legacy-recordings.ts"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^10.0.0",
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "@supabase/supabase-js": "^2.108.2",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.6.2",
+    "jose": "^6.2.3",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^20.19.43",
+    "eslint": "^9.39.4",
+    "prisma": "^7.8.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.61.1",
+    "vitest": "^4.0.15"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "bugsy",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.8.0",
+  "scripts": {
+    "dev": "pnpm --recursive --parallel dev",
+    "dev:web": "pnpm --filter @bugsy/web exec next dev --hostname localhost --port 3001",
+    "dev:web:3000": "pnpm --filter @bugsy/web exec next dev --hostname localhost --port 3000",
+    "dev:api": "pnpm --filter @bugsy/api dev",
+    "dev:extension": "pnpm --filter @bugsy/extension dev",
+    "build": "pnpm --recursive build",
+    "build:web": "pnpm --filter @bugsy/web build",
+    "build:api": "pnpm --filter @bugsy/api build",
+    "build:extension": "pnpm --filter @bugsy/extension build",
+    "build:extension:production": "pnpm --filter @bugsy/extension build:production",
+    "icons:extension": "pnpm --filter @bugsy/extension generate:icons",
+    "lint": "pnpm --recursive lint",
+    "lint:web": "pnpm --filter @bugsy/web lint",
+    "lint:api": "pnpm --filter @bugsy/api lint",
+    "lint:extension": "pnpm --filter @bugsy/extension lint",
+    "test": "pnpm --recursive test",
+    "test:api": "pnpm --filter @bugsy/api test",
+    "typecheck": "pnpm --recursive typecheck",
+    "typecheck:web": "pnpm --filter @bugsy/web typecheck",
+    "typecheck:api": "pnpm --filter @bugsy/api typecheck",
+    "typecheck:extension": "pnpm --filter @bugsy/extension typecheck",
+    "prisma:generate:api": "pnpm --filter @bugsy/api prisma:generate",
+    "prisma:migrate:api": "pnpm --filter @bugsy/api prisma:migrate",
+    "prisma:deploy:api": "pnpm --filter @bugsy/api prisma:deploy",
+    "prisma:studio:api": "pnpm --filter @bugsy/api prisma:studio",
+    "legacy:assign-recordings:api": "pnpm --filter @bugsy/api legacy:assign-recordings",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
