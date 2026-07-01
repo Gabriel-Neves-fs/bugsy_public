@@ -12,9 +12,8 @@ Gravar uma aba -> revisar o vídeo -> fazer upload -> salvar metadados -> compar
 
 URLs de produção:
 
-- App web: `adicione-a-url-do-app-aqui`
-- Health check da API: `adicione-a-url-da-api-aqui/health`
-- Download da extensão: `adicione-o-link-do-drive-ou-release-aqui`
+- App web: `https://bugsy-web.vercel.app/`
+- Download da extensão: `https://drive.google.com/file/d/1L4L00ZCQ5T7yriPEDrEIV5VrnzgyNbbw/view?usp=drive_link`
 
 A extensão ainda não está publicada na Chrome Web Store. Por enquanto, ela pode ser instalada manualmente a partir da build de produção.
 
